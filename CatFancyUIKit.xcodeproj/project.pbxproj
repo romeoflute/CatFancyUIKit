@@ -33,6 +33,7 @@
 		BCBC23C22BA2D275001F671A /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBC23C12BA2D275001F671A /* Fonts.swift */; };
 		BCBC23C42BA2D35F001F671A /* BreedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBC23C32BA2D35F001F671A /* BreedCell.swift */; };
 		BCBC23C62BA2D49B001F671A /* LoadingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBC23C52BA2D49B001F671A /* LoadingState.swift */; };
+		BCBC23C82BA2D5B5001F671A /* BrowseBreedsDeleSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBC23C72BA2D5B5001F671A /* BrowseBreedsDeleSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		BCBC23C12BA2D275001F671A /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		BCBC23C32BA2D35F001F671A /* BreedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedCell.swift; sourceTree = "<group>"; };
 		BCBC23C52BA2D49B001F671A /* LoadingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingState.swift; sourceTree = "<group>"; };
+		BCBC23C72BA2D5B5001F671A /* BrowseBreedsDeleSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseBreedsDeleSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +204,7 @@
 			children = (
 				BCBC23682BA2BB1A001F671A /* AppDelegate.swift */,
 				BCBC236A2BA2BB1A001F671A /* SceneDelegate.swift */,
+				BCBC23C72BA2D5B5001F671A /* BrowseBreedsDeleSource.swift */,
 			);
 			path = Delegates;
 			sourceTree = "<group>";
@@ -361,6 +364,7 @@
 				BCBC23A12BA2C1B5001F671A /* Breeds.swift in Sources */,
 				BCBC23A32BA2C233001F671A /* BreedsLoader.swift in Sources */,
 				BCBC23BE2BA2CD48001F671A /* Symbols.swift in Sources */,
+				BCBC23C82BA2D5B5001F671A /* BrowseBreedsDeleSource.swift in Sources */,
 				BCBC23C02BA2D1A0001F671A /* BrowseBreedsView.swift in Sources */,
 				BCBC239A2BA2BF60001F671A /* Breed.swift in Sources */,
 				BCBC239C2BA2C04E001F671A /* License.swift in Sources */,

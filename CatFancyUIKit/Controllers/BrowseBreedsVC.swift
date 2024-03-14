@@ -8,6 +8,8 @@
 import UIKit
 
 class BrowseBreedsVC: UIViewController {
+    private var loadingState: LoadingState = .notStarted
+    
     var browseBreedsView: BrowseBreedsView {
         if let castedView = view as? BrowseBreedsView {
             return castedView
