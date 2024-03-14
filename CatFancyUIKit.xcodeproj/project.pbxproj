@@ -34,6 +34,10 @@
 		BCBC23C42BA2D35F001F671A /* BreedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBC23C32BA2D35F001F671A /* BreedCell.swift */; };
 		BCBC23C62BA2D49B001F671A /* LoadingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBC23C52BA2D49B001F671A /* LoadingState.swift */; };
 		BCBC23C82BA2D5B5001F671A /* BrowseBreedsDeleSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBC23C72BA2D5B5001F671A /* BrowseBreedsDeleSource.swift */; };
+		BCBC23CA2BA2D7A5001F671A /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBC23C92BA2D7A5001F671A /* Sound.swift */; };
+		BCBC23CC2BA2D7FA001F671A /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBC23CB2BA2D7FA001F671A /* SoundPlayer.swift */; };
+		BCBC23CF2BA2DC31001F671A /* chime.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BCBC23CD2BA2DC31001F671A /* chime.mp3 */; };
+		BCBC23D02BA2DC31001F671A /* sadTrombone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BCBC23CE2BA2DC31001F671A /* sadTrombone.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +89,10 @@
 		BCBC23C32BA2D35F001F671A /* BreedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedCell.swift; sourceTree = "<group>"; };
 		BCBC23C52BA2D49B001F671A /* LoadingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingState.swift; sourceTree = "<group>"; };
 		BCBC23C72BA2D5B5001F671A /* BrowseBreedsDeleSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseBreedsDeleSource.swift; sourceTree = "<group>"; };
+		BCBC23C92BA2D7A5001F671A /* Sound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
+		BCBC23CB2BA2D7FA001F671A /* SoundPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
+		BCBC23CD2BA2DC31001F671A /* chime.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chime.mp3; sourceTree = "<group>"; };
+		BCBC23CE2BA2DC31001F671A /* sadTrombone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sadTrombone.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +179,7 @@
 				BCBC23A02BA2C1B5001F671A /* Breeds.swift */,
 				BCBC23BD2BA2CD48001F671A /* Symbols.swift */,
 				BCBC23C52BA2D49B001F671A /* LoadingState.swift */,
+				BCBC23C92BA2D7A5001F671A /* Sound.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -186,6 +195,7 @@
 				BCBC23AF2BA2C89C001F671A /* UIViewControllerExtension.swift */,
 				BCBC23B32BA2CA92001F671A /* UsesAutoLayout.swift */,
 				BCBC23C12BA2D275001F671A /* Fonts.swift */,
+				BCBC23CB2BA2D7FA001F671A /* SoundPlayer.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -223,6 +233,8 @@
 		BCBC23A82BA2C66C001F671A /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				BCBC23CD2BA2DC31001F671A /* chime.mp3 */,
+				BCBC23CE2BA2DC31001F671A /* sadTrombone.mp3 */,
 				BCBC23712BA2BB1B001F671A /* Assets.xcassets */,
 				BCBC23732BA2BB1B001F671A /* LaunchScreen.storyboard */,
 			);
@@ -333,8 +345,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCBC23CF2BA2DC31001F671A /* chime.mp3 in Resources */,
 				BCBC23722BA2BB1B001F671A /* Assets.xcassets in Resources */,
 				BCBC23752BA2BB1B001F671A /* Base in Resources */,
+				BCBC23D02BA2DC31001F671A /* sadTrombone.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +373,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCBC23CA2BA2D7A5001F671A /* Sound.swift in Sources */,
 				BCBC23B82BA2CC41001F671A /* BreedDetailVC.swift in Sources */,
 				BCBC23B62BA2CB2E001F671A /* SettingsVC.swift in Sources */,
 				BCBC23A12BA2C1B5001F671A /* Breeds.swift in Sources */,
@@ -368,6 +383,7 @@
 				BCBC23C02BA2D1A0001F671A /* BrowseBreedsView.swift in Sources */,
 				BCBC239A2BA2BF60001F671A /* Breed.swift in Sources */,
 				BCBC239C2BA2C04E001F671A /* License.swift in Sources */,
+				BCBC23CC2BA2D7FA001F671A /* SoundPlayer.swift in Sources */,
 				BCBC23C42BA2D35F001F671A /* BreedCell.swift in Sources */,
 				BCBC23692BA2BB1A001F671A /* AppDelegate.swift in Sources */,
 				BCBC23BC2BA2CCE6001F671A /* MainTabBarVC.swift in Sources */,
