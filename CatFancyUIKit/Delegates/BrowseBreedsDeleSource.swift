@@ -13,7 +13,7 @@ class BrowseBreedsDeleSource: NSObject, UITableViewDelegate, UITableViewDataSour
     
     func sortBreeds() {
         breeds.sort { breed1, breed2 in
-            SortOrder.current.compare(breed1: breed1, breed2: breed2)
+            Current.settings.sortOrder.compare(breed1: breed1, breed2: breed2)
         }
     }
     

@@ -33,7 +33,7 @@ class SettingsVC: UIViewController {
     }
     
     private func updateControl() {
-        switch SortOrder.current {
+        switch Current.settings.sortOrder {
         case .name:
             settingsView.sortOrderControl.selectedSegmentIndex = 0
         case .popularity:
@@ -44,9 +44,9 @@ class SettingsVC: UIViewController {
     @objc func sortOrderChanged(_ sender: UISegmentedControl) {
         let index = settingsView.sortOrderControl.selectedSegmentIndex
         if index == 0 {
-            SortOrder.current = .name
+            Current.settings.sortOrder = .name
         } else if index == 1 {
-            SortOrder.current = .popularity
+            Current.settings.sortOrder = .popularity
         }
     }
 }

@@ -7,9 +7,7 @@
 
 import Foundation
 
-enum SortOrder: String, CaseIterable {
-    static var current = SortOrder.name
-    
+enum SortOrder: String, CaseIterable {    
     case name
     case popularity
     
