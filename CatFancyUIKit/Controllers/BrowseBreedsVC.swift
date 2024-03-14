@@ -8,14 +8,16 @@
 import UIKit
 
 class BrowseBreedsVC: UIViewController {
-    override func viewDidLoad() {
-        Task {
-            do {
-                let breeds = try await BreedsLoader.loadBreeds()
-                print("BreedsLoader retrieved \(breeds.count) breed(s).")
-            } catch {
-                print("An error happened during breed loading.")
-            }
+    var browseBreedsView: BrowseBreedsView {
+        if let castedView = view as? BrowseBreedsView {
+            return castedView
+        } else {
+            fatalError(fatalCastMessage(view: BrowseBreedsView.self))
         }
+    }
+    
+    override func loadView() {
+        view = BrowseBreedsView(frame: UIScreen.main.bounds)
+        title = "Browse"
     }
 }
