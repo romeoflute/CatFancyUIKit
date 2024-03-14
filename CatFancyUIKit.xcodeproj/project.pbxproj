@@ -77,6 +77,10 @@
 		BCBC24202BA2F4AE001F671A /* breeds_with_more.json in Resources */ = {isa = PBXBuildFile; fileRef = BCBC24092BA2F4AE001F671A /* breeds_with_more.json */; };
 		BCBC24212BA2F4AE001F671A /* breeds_malformed.json in Resources */ = {isa = PBXBuildFile; fileRef = BCBC240A2BA2F4AE001F671A /* breeds_malformed.json */; };
 		BCBC24222BA2F4AE001F671A /* breeds_empty.json in Resources */ = {isa = PBXBuildFile; fileRef = BCBC240B2BA2F4AE001F671A /* breeds_empty.json */; };
+		BCBC24252BA301E2001F671A /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBC24242BA301E2001F671A /* Coordinator.swift */; };
+		BCBC24272BA3020C001F671A /* BreedCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBC24262BA3020C001F671A /* BreedCoordinator.swift */; };
+		BCBC24292BA302C4001F671A /* BrowseBreedsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBC24282BA302C4001F671A /* BrowseBreedsDelegate.swift */; };
+		BCBC242B2BA30397001F671A /* BreedDetailDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBC242A2BA30397001F671A /* BreedDetailDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -171,6 +175,10 @@
 		BCBC24092BA2F4AE001F671A /* breeds_with_more.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = breeds_with_more.json; sourceTree = "<group>"; };
 		BCBC240A2BA2F4AE001F671A /* breeds_malformed.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = breeds_malformed.json; sourceTree = "<group>"; };
 		BCBC240B2BA2F4AE001F671A /* breeds_empty.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = breeds_empty.json; sourceTree = "<group>"; };
+		BCBC24242BA301E2001F671A /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		BCBC24262BA3020C001F671A /* BreedCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedCoordinator.swift; sourceTree = "<group>"; };
+		BCBC24282BA302C4001F671A /* BrowseBreedsDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseBreedsDelegate.swift; sourceTree = "<group>"; };
+		BCBC242A2BA30397001F671A /* BreedDetailDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedDetailDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,6 +229,7 @@
 		BCBC23672BA2BB1A001F671A /* CatFancyUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				BCBC24232BA3011A001F671A /* Navigation */,
 				BCBC23F32BA2F491001F671A /* MockData */,
 				BCBC23A82BA2C66C001F671A /* Assets */,
 				BCBC23A72BA2C668001F671A /* Controllers */,
@@ -372,6 +381,17 @@
 				BCBC24062BA2F4AE001F671A /* Van.jpg */,
 			);
 			path = CatImages;
+			sourceTree = "<group>";
+		};
+		BCBC24232BA3011A001F671A /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				BCBC24242BA301E2001F671A /* Coordinator.swift */,
+				BCBC24262BA3020C001F671A /* BreedCoordinator.swift */,
+				BCBC24282BA302C4001F671A /* BrowseBreedsDelegate.swift */,
+				BCBC242A2BA30397001F671A /* BreedDetailDelegate.swift */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -532,10 +552,12 @@
 				BCBC23CA2BA2D7A5001F671A /* Sound.swift in Sources */,
 				BCBC23B82BA2CC41001F671A /* BreedDetailVC.swift in Sources */,
 				BCBC23B62BA2CB2E001F671A /* SettingsVC.swift in Sources */,
+				BCBC24292BA302C4001F671A /* BrowseBreedsDelegate.swift in Sources */,
 				BCBC23DA2BA2EF14001F671A /* World.swift in Sources */,
 				BCBC23E62BA2F18C001F671A /* Settings.swift in Sources */,
 				BCBC23A12BA2C1B5001F671A /* Breeds.swift in Sources */,
 				BCBC23DE2BA2F074001F671A /* SoundPlayerDummy.swift in Sources */,
+				BCBC242B2BA30397001F671A /* BreedDetailDelegate.swift in Sources */,
 				BCBC23A32BA2C233001F671A /* BreedsLoader.swift in Sources */,
 				BCBC23BE2BA2CD48001F671A /* Symbols.swift in Sources */,
 				BCBC23C82BA2D5B5001F671A /* BrowseBreedsDeleSource.swift in Sources */,
@@ -551,6 +573,8 @@
 				BCBC23F22BA2F3B1001F671A /* URLProtocolStub.swift in Sources */,
 				BCBC23692BA2BB1A001F671A /* AppDelegate.swift in Sources */,
 				BCBC23BC2BA2CCE6001F671A /* MainTabBarVC.swift in Sources */,
+				BCBC24252BA301E2001F671A /* Coordinator.swift in Sources */,
+				BCBC24272BA3020C001F671A /* BreedCoordinator.swift in Sources */,
 				BCBC23EC2BA2F2AB001F671A /* SessionType.swift in Sources */,
 				BCBC23AA2BA2C73C001F671A /* Layout.swift in Sources */,
 				BCBC23BA2BA2CC63001F671A /* BrowseBreedsVC.swift in Sources */,

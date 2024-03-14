@@ -9,6 +9,7 @@ import UIKit
 
 class BreedDetailVC: UIViewController {
     private let breed: Breed
+    private weak var breedDetailDelegate: BreedDetailDelegate?
     
     private var breedDetailView: BreedDetailView {
         if let castedView = view as? BreedDetailView {
@@ -18,8 +19,9 @@ class BreedDetailVC: UIViewController {
         }
     }
     
-    init(breed: Breed) {
+    init(breed: Breed, breedDetailDelegate: BreedDetailDelegate) {
         self.breed = breed
+        self.breedDetailDelegate = breedDetailDelegate
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -42,10 +44,10 @@ class BreedDetailVC: UIViewController {
     }
     
     @objc func showWikipediaArticle() {
-        UIApplication.shared.open(breed.infoUrl)
+        breedDetailDelegate?.showWebpage(url: breed.infoUrl, didSucceed: nil)
     }
     
     @objc func showLicense() {
-        UIApplication.shared.open(breed.license.url)
+        breedDetailDelegate?.showWebpage(url: breed.license.url, didSucceed: nil)
     }
 }

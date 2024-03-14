@@ -11,6 +11,7 @@ class BrowseBreedsVC: UIViewController {
     private let deleSource: BrowseBreedsDeleSource
     private var loadingState: LoadingState = .notStarted
     private var isRefreshing = false
+    private let onRequestFinished: ([Breed]) -> ()
     
     private var browseBreedsView: BrowseBreedsView {
         if let castedView = view as? BrowseBreedsView {
@@ -20,8 +21,10 @@ class BrowseBreedsVC: UIViewController {
         }
     }
     
-    init() {
-        deleSource = BrowseBreedsDeleSource()
+    // onRequestFinished will be used by unit test
+    init(browseBreedsDelegate: BrowseBreedsDelegate, onRequestFinished: @escaping ([Breed]) -> () = { _ in }) {
+        deleSource = BrowseBreedsDeleSource(browseBreedsDelegate: browseBreedsDelegate)
+        self.onRequestFinished = onRequestFinished
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -35,7 +38,6 @@ class BrowseBreedsVC: UIViewController {
         browseBreedsView.setupTable(dataSource: deleSource, delegate: deleSource)
         browseBreedsView.refreshControl.addTarget(self, action: #selector(refreshBreeds(_:)), for: .valueChanged)
         browseBreedsView.retryButton.addTarget(self, action: #selector(retry), for: .touchUpInside)
-        deleSource.navigationController = navigationController
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -84,6 +86,7 @@ class BrowseBreedsVC: UIViewController {
             isRefreshing = false
         }
         browseBreedsView.tableView.reloadData()
+        onRequestFinished(deleSource.breeds)
     }
     
     @objc private func refreshBreeds(_ sender: Any) {

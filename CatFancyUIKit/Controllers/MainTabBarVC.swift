@@ -8,15 +8,10 @@
 import UIKit
 
 class MainTabBarVC: UITabBarController {
-    convenience init() {
-        self.init(nibName: nil, bundle: nil)
-        
-        let browseBreedsNavC = UINavigationController(rootViewController: BrowseBreedsVC())
-        browseBreedsNavC.tabBarItem = UITabBarItem(
-            title: "Browse",
-            image: Symbols.pawPrint,
-            selectedImage: nil
-        )
+    private let breedCoordinator = BreedCoordinator(navigationController: UINavigationController())
+    
+    override func viewDidLoad() {
+        breedCoordinator.start()
         
         let settingsVC = SettingsVC()
         settingsVC.tabBarItem = UITabBarItem(
@@ -25,6 +20,6 @@ class MainTabBarVC: UITabBarController {
             selectedImage: nil
         )
         
-        viewControllers = [browseBreedsNavC, settingsVC]
+        viewControllers = [breedCoordinator.navigationController, settingsVC]
     }
 }
