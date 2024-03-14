@@ -20,6 +20,18 @@ class SettingsVC: UIViewController {
         view = SettingsView(frame: UIScreen.main.bounds)
         title = "Settings"
         
+        settingsView.breedsURLControl.addTarget(
+            self,
+            action: #selector(breedsURLChanged(_:)),
+            for: .valueChanged
+        )
+        
+        settingsView.sessionTypeControl.addTarget(
+            self,
+            action: #selector(sessionTypeChanged(_:)),
+            for: .valueChanged
+        )
+        
         settingsView.sortOrderControl.addTarget(
             self,
             action: #selector(sortOrderChanged(_:)),
@@ -29,15 +41,55 @@ class SettingsVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        updateControl()
+        updateControls()
     }
     
-    private func updateControl() {
+    private func updateControls() {
+        switch Current.settings.breedsURL {
+        case .standard:
+            settingsView.breedsURLControl.selectedSegmentIndex = 0
+        case .empty:
+            settingsView.breedsURLControl.selectedSegmentIndex = 1
+        case .malformed:
+            settingsView.breedsURLControl.selectedSegmentIndex = 2
+        case .withMore:
+            settingsView.breedsURLControl.selectedSegmentIndex = 3
+        }
+        
+        switch Current.settings.sessionType {
+        case .shared:
+            settingsView.sessionTypeControl.selectedSegmentIndex = 0
+        case .stub:
+            settingsView.sessionTypeControl.selectedSegmentIndex = 1
+        }
+        
         switch Current.settings.sortOrder {
         case .name:
             settingsView.sortOrderControl.selectedSegmentIndex = 0
         case .popularity:
             settingsView.sortOrderControl.selectedSegmentIndex = 1
+        }
+    }
+    
+    @objc func breedsURLChanged(_ sender: UISegmentedControl) {
+        let index = settingsView.breedsURLControl.selectedSegmentIndex
+        if index == 0 {
+            Current.settings.breedsURL = .standard
+        } else if index == 1 {
+            Current.settings.breedsURL = .empty
+        } else if index == 2 {
+            Current.settings.breedsURL = .malformed
+        } else if index == 3 {
+            Current.settings.breedsURL = .withMore
+        }
+    }
+    
+    @objc func sessionTypeChanged(_ sender: UISegmentedControl) {
+        let index = settingsView.sessionTypeControl.selectedSegmentIndex
+        if index == 0 {
+            Current.settings.sessionType = .shared
+        } else if index == 1 {
+            Current.settings.sessionType = .stub
         }
     }
     
