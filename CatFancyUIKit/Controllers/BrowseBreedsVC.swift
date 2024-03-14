@@ -8,7 +8,6 @@
 import UIKit
 
 class BrowseBreedsVC: UIViewController {
-    private let soundPlayer = SoundPlayer()
     private let deleSource: BrowseBreedsDeleSource
     private var loadingState: LoadingState = .notStarted
     private var isRefreshing = false
@@ -67,16 +66,16 @@ class BrowseBreedsVC: UIViewController {
             deleSource.breeds = breeds
             if breeds.isEmpty {
                 self.loadingState = .succeededWithNoBreeds
-                soundPlayer.play(.sadTrombone)
+                Current.soundPlayer.play(.sadTrombone)
             } else {
                 deleSource.sortBreeds()
                 loadingState = .succeededWithBreeds
-                soundPlayer.play(.chime)
+                Current.soundPlayer.play(.chime)
             }
         } catch {
             deleSource.breeds = []
             loadingState = .failed
-            soundPlayer.play(.sadTrombone)
+            Current.soundPlayer.play(.sadTrombone)
         }
         
         browseBreedsView.showLoadingState(loadingState)
