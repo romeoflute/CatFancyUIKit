@@ -37,6 +37,7 @@ final class BreedDetailVCTests: XCTestCase {
         )
         let bdvc = BreedDetailVC(breed: sampleBreed, breedDetailDelegate: testBreedDetailDelegateSpy)
         
+        // triggers loadView()
         bdvc.beginAppearanceTransition(true, animated: false)
         bdvc.showWikipediaArticle()
         guard let tappedURL = url else {
