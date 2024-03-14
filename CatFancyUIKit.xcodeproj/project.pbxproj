@@ -22,6 +22,7 @@
 		BCBC23AA2BA2C73C001F671A /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBC23A92BA2C73C001F671A /* Layout.swift */; };
 		BCBC23AC2BA2C7E5001F671A /* NSCoderExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBC23AB2BA2C7E5001F671A /* NSCoderExtension.swift */; };
 		BCBC23AE2BA2C840001F671A /* NSLayoutContstraintExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBC23AD2BA2C840001F671A /* NSLayoutContstraintExtension.swift */; };
+		BCBC23B02BA2C89C001F671A /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBC23AF2BA2C89C001F671A /* UIViewControllerExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		BCBC23A92BA2C73C001F671A /* Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layout.swift; sourceTree = "<group>"; };
 		BCBC23AB2BA2C7E5001F671A /* NSCoderExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSCoderExtension.swift; sourceTree = "<group>"; };
 		BCBC23AD2BA2C840001F671A /* NSLayoutContstraintExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSLayoutContstraintExtension.swift; sourceTree = "<group>"; };
+		BCBC23AF2BA2C89C001F671A /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 				BCBC23A92BA2C73C001F671A /* Layout.swift */,
 				BCBC23AB2BA2C7E5001F671A /* NSCoderExtension.swift */,
 				BCBC23AD2BA2C840001F671A /* NSLayoutContstraintExtension.swift */,
+				BCBC23AF2BA2C89C001F671A /* UIViewControllerExtension.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 				BCBC23AE2BA2C840001F671A /* NSLayoutContstraintExtension.swift in Sources */,
 				BCBC236B2BA2BB1A001F671A /* SceneDelegate.swift in Sources */,
 				BCBC23AC2BA2C7E5001F671A /* NSCoderExtension.swift in Sources */,
+				BCBC23B02BA2C89C001F671A /* UIViewControllerExtension.swift in Sources */,
 				BCBC239F2BA2C0EA001F671A /* URLExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
