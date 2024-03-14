@@ -81,6 +81,7 @@
 		BCBC24272BA3020C001F671A /* BreedCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBC24262BA3020C001F671A /* BreedCoordinator.swift */; };
 		BCBC24292BA302C4001F671A /* BrowseBreedsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBC24282BA302C4001F671A /* BrowseBreedsDelegate.swift */; };
 		BCBC242B2BA30397001F671A /* BreedDetailDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBC242A2BA30397001F671A /* BreedDetailDelegate.swift */; };
+		BCBC242D2BA30750001F671A /* SettingsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBC242C2BA30750001F671A /* SettingsCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -179,6 +180,7 @@
 		BCBC24262BA3020C001F671A /* BreedCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedCoordinator.swift; sourceTree = "<group>"; };
 		BCBC24282BA302C4001F671A /* BrowseBreedsDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseBreedsDelegate.swift; sourceTree = "<group>"; };
 		BCBC242A2BA30397001F671A /* BreedDetailDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedDetailDelegate.swift; sourceTree = "<group>"; };
+		BCBC242C2BA30750001F671A /* SettingsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -390,6 +392,7 @@
 				BCBC24262BA3020C001F671A /* BreedCoordinator.swift */,
 				BCBC24282BA302C4001F671A /* BrowseBreedsDelegate.swift */,
 				BCBC242A2BA30397001F671A /* BreedDetailDelegate.swift */,
+				BCBC242C2BA30750001F671A /* SettingsCoordinator.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -589,6 +592,7 @@
 				BCBC23E42BA2F13A001F671A /* GetterSetterFake.swift in Sources */,
 				BCBC23E22BA2F113001F671A /* GetterSetterReal.swift in Sources */,
 				BCBC23D82BA2EAB6001F671A /* BreedDetailView.swift in Sources */,
+				BCBC242D2BA30750001F671A /* SettingsCoordinator.swift in Sources */,
 				BCBC23C22BA2D275001F671A /* Fonts.swift in Sources */,
 				BCBC239F2BA2C0EA001F671A /* URLExtension.swift in Sources */,
 				BCBC23E82BA2F218001F671A /* BreedsURL.swift in Sources */,
