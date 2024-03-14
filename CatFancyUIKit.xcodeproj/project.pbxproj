@@ -17,6 +17,8 @@
 		BCBC238A2BA2BB1B001F671A /* CatFancyUIKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBC23892BA2BB1B001F671A /* CatFancyUIKitUITests.swift */; };
 		BCBC238C2BA2BB1B001F671A /* CatFancyUIKitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBC238B2BA2BB1B001F671A /* CatFancyUIKitUITestsLaunchTests.swift */; };
 		BCBC239A2BA2BF60001F671A /* Breed.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBC23992BA2BF60001F671A /* Breed.swift */; };
+		BCBC239C2BA2C04E001F671A /* License.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBC239B2BA2C04E001F671A /* License.swift */; };
+		BCBC239F2BA2C0EA001F671A /* URLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBC239E2BA2C0EA001F671A /* URLExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		BCBC23892BA2BB1B001F671A /* CatFancyUIKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatFancyUIKitUITests.swift; sourceTree = "<group>"; };
 		BCBC238B2BA2BB1B001F671A /* CatFancyUIKitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatFancyUIKitUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		BCBC23992BA2BF60001F671A /* Breed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breed.swift; sourceTree = "<group>"; };
+		BCBC239B2BA2C04E001F671A /* License.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = License.swift; sourceTree = "<group>"; };
+		BCBC239E2BA2C0EA001F671A /* URLExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,7 @@
 		BCBC23672BA2BB1A001F671A /* CatFancyUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				BCBC239D2BA2C0DC001F671A /* Helpers */,
 				BCBC23982BA2BF51001F671A /* Models */,
 				BCBC23682BA2BB1A001F671A /* AppDelegate.swift */,
 				BCBC236A2BA2BB1A001F671A /* SceneDelegate.swift */,
@@ -134,8 +139,17 @@
 			isa = PBXGroup;
 			children = (
 				BCBC23992BA2BF60001F671A /* Breed.swift */,
+				BCBC239B2BA2C04E001F671A /* License.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		BCBC239D2BA2C0DC001F671A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				BCBC239E2BA2C0EA001F671A /* URLExtension.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,8 +285,10 @@
 			files = (
 				BCBC239A2BA2BF60001F671A /* Breed.swift in Sources */,
 				BCBC236D2BA2BB1A001F671A /* ViewController.swift in Sources */,
+				BCBC239C2BA2C04E001F671A /* License.swift in Sources */,
 				BCBC23692BA2BB1A001F671A /* AppDelegate.swift in Sources */,
 				BCBC236B2BA2BB1A001F671A /* SceneDelegate.swift in Sources */,
+				BCBC239F2BA2C0EA001F671A /* URLExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
