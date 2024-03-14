@@ -46,6 +46,7 @@ class BrowseBreedsVC: UIViewController {
         if loadingState == .notStarted {
             loadBreeds()
         } else if loadingState == .succeededWithBreeds {
+            deleSource.sortBreeds()
             browseBreedsView.tableView.setContentOffset(.zero, animated: false)
         }
     }
@@ -67,6 +68,7 @@ class BrowseBreedsVC: UIViewController {
                 self.loadingState = .succeededWithNoBreeds
                 soundPlayer.play(.sadTrombone)
             } else {
+                deleSource.sortBreeds()
                 loadingState = .succeededWithBreeds
                 soundPlayer.play(.chime)
             }

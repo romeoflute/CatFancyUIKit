@@ -38,6 +38,7 @@
 		BCBC23CC2BA2D7FA001F671A /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBC23CB2BA2D7FA001F671A /* SoundPlayer.swift */; };
 		BCBC23CF2BA2DC31001F671A /* chime.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BCBC23CD2BA2DC31001F671A /* chime.mp3 */; };
 		BCBC23D02BA2DC31001F671A /* sadTrombone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BCBC23CE2BA2DC31001F671A /* sadTrombone.mp3 */; };
+		BCBC23D22BA2E729001F671A /* SortOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBC23D12BA2E729001F671A /* SortOrder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +94,7 @@
 		BCBC23CB2BA2D7FA001F671A /* SoundPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
 		BCBC23CD2BA2DC31001F671A /* chime.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chime.mp3; sourceTree = "<group>"; };
 		BCBC23CE2BA2DC31001F671A /* sadTrombone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sadTrombone.mp3; sourceTree = "<group>"; };
+		BCBC23D12BA2E729001F671A /* SortOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortOrder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +182,7 @@
 				BCBC23BD2BA2CD48001F671A /* Symbols.swift */,
 				BCBC23C52BA2D49B001F671A /* LoadingState.swift */,
 				BCBC23C92BA2D7A5001F671A /* Sound.swift */,
+				BCBC23D12BA2E729001F671A /* SortOrder.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -383,6 +386,7 @@
 				BCBC23C02BA2D1A0001F671A /* BrowseBreedsView.swift in Sources */,
 				BCBC239A2BA2BF60001F671A /* Breed.swift in Sources */,
 				BCBC239C2BA2C04E001F671A /* License.swift in Sources */,
+				BCBC23D22BA2E729001F671A /* SortOrder.swift in Sources */,
 				BCBC23CC2BA2D7FA001F671A /* SoundPlayer.swift in Sources */,
 				BCBC23C42BA2D35F001F671A /* BreedCell.swift in Sources */,
 				BCBC23692BA2BB1A001F671A /* AppDelegate.swift in Sources */,

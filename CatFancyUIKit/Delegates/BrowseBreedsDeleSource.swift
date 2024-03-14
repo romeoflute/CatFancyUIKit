@@ -10,6 +10,12 @@ import UIKit
 class BrowseBreedsDeleSource: NSObject, UITableViewDelegate, UITableViewDataSource {
     var breeds: [Breed] = []
     
+    func sortBreeds() {
+        breeds.sort { breed1, breed2 in
+            SortOrder.current.compare(breed1: breed1, breed2: breed2)
+        }
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         breeds.count
     }
