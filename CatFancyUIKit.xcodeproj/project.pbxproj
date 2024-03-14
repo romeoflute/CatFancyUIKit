@@ -40,6 +40,7 @@
 		BCBC23D02BA2DC31001F671A /* sadTrombone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BCBC23CE2BA2DC31001F671A /* sadTrombone.mp3 */; };
 		BCBC23D22BA2E729001F671A /* SortOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBC23D12BA2E729001F671A /* SortOrder.swift */; };
 		BCBC23D42BA2E879001F671A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBC23D32BA2E879001F671A /* SettingsView.swift */; };
+		BCBC23D62BA2E9B6001F671A /* ImageCacheLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBC23D52BA2E9B6001F671A /* ImageCacheLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,7 @@
 		BCBC23CE2BA2DC31001F671A /* sadTrombone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sadTrombone.mp3; sourceTree = "<group>"; };
 		BCBC23D12BA2E729001F671A /* SortOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortOrder.swift; sourceTree = "<group>"; };
 		BCBC23D32BA2E879001F671A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		BCBC23D52BA2E9B6001F671A /* ImageCacheLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +203,7 @@
 				BCBC23B32BA2CA92001F671A /* UsesAutoLayout.swift */,
 				BCBC23C12BA2D275001F671A /* Fonts.swift */,
 				BCBC23CB2BA2D7FA001F671A /* SoundPlayer.swift */,
+				BCBC23D52BA2E9B6001F671A /* ImageCacheLoader.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -400,6 +403,7 @@
 				BCBC236B2BA2BB1A001F671A /* SceneDelegate.swift in Sources */,
 				BCBC23C62BA2D49B001F671A /* LoadingState.swift in Sources */,
 				BCBC23AC2BA2C7E5001F671A /* NSCoderExtension.swift in Sources */,
+				BCBC23D62BA2E9B6001F671A /* ImageCacheLoader.swift in Sources */,
 				BCBC23B02BA2C89C001F671A /* UIViewControllerExtension.swift in Sources */,
 				BCBC23B42BA2CA92001F671A /* UsesAutoLayout.swift in Sources */,
 				BCBC23C22BA2D275001F671A /* Fonts.swift in Sources */,

@@ -24,6 +24,15 @@ class BrowseBreedsDeleSource: NSObject, UITableViewDelegate, UITableViewDataSour
         let cell = tableView.dequeueReusableCell(withIdentifier: "\(BreedCell.self)") as? BreedCell ?? BreedCell()
         let breed = breeds[indexPath.row]
         cell.configure(breed: breed)
+        Task {
+            let image = await ImageCacheLoader.requestImage(url: breed.photoUrl)
+            if
+                let image,
+                let updateCell = tableView.cellForRow(at: indexPath) as? BreedCell
+            {
+                updateCell.photoImageView.image = image
+            }
+        }
         
         return cell
     }
