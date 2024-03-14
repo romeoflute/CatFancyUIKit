@@ -36,6 +36,7 @@ class BrowseBreedsVC: UIViewController {
         browseBreedsView.setupTable(dataSource: deleSource, delegate: deleSource)
         browseBreedsView.refreshControl.addTarget(self, action: #selector(refreshBreeds(_:)), for: .valueChanged)
         browseBreedsView.retryButton.addTarget(self, action: #selector(retry), for: .touchUpInside)
+        deleSource.navigationController = navigationController
     }
     
     override func viewWillAppear(_ animated: Bool) {

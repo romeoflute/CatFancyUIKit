@@ -9,6 +9,7 @@ import UIKit
 
 class BrowseBreedsDeleSource: NSObject, UITableViewDelegate, UITableViewDataSource {
     var breeds: [Breed] = []
+    var navigationController: UINavigationController?
     
     func sortBreeds() {
         breeds.sort { breed1, breed2 in
@@ -38,6 +39,7 @@ class BrowseBreedsDeleSource: NSObject, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // TODO
+        let breedDetailVC = BreedDetailVC(breed: breeds[indexPath.row])
+        navigationController?.pushViewController(breedDetailVC, animated: true)
     }
 }

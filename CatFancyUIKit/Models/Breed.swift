@@ -14,6 +14,6 @@ struct Breed: Decodable {
     let photoUrl: URL
     let infoUrl: URL
     let credit: String
-    let license: String
+    let license: License
     let description: String
 }
