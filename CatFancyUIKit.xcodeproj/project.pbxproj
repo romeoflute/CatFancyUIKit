@@ -39,6 +39,7 @@
 		BCBC23CF2BA2DC31001F671A /* chime.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BCBC23CD2BA2DC31001F671A /* chime.mp3 */; };
 		BCBC23D02BA2DC31001F671A /* sadTrombone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BCBC23CE2BA2DC31001F671A /* sadTrombone.mp3 */; };
 		BCBC23D22BA2E729001F671A /* SortOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBC23D12BA2E729001F671A /* SortOrder.swift */; };
+		BCBC23D42BA2E879001F671A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBC23D32BA2E879001F671A /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +96,7 @@
 		BCBC23CD2BA2DC31001F671A /* chime.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chime.mp3; sourceTree = "<group>"; };
 		BCBC23CE2BA2DC31001F671A /* sadTrombone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sadTrombone.mp3; sourceTree = "<group>"; };
 		BCBC23D12BA2E729001F671A /* SortOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortOrder.swift; sourceTree = "<group>"; };
+		BCBC23D32BA2E879001F671A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +210,7 @@
 			children = (
 				BCBC23BF2BA2D1A0001F671A /* BrowseBreedsView.swift */,
 				BCBC23C32BA2D35F001F671A /* BreedCell.swift */,
+				BCBC23D32BA2E879001F671A /* SettingsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -401,6 +404,7 @@
 				BCBC23B42BA2CA92001F671A /* UsesAutoLayout.swift in Sources */,
 				BCBC23C22BA2D275001F671A /* Fonts.swift in Sources */,
 				BCBC239F2BA2C0EA001F671A /* URLExtension.swift in Sources */,
+				BCBC23D42BA2E879001F671A /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
