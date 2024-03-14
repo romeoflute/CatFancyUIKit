@@ -8,7 +8,7 @@
 import UIKit
 
 class BrowseBreedsVC: UIViewController {
-    private let deleSource: BrowseBreedsDeleSource
+    let deleSource: BrowseBreedsDeleSource
     private var loadingState: LoadingState = .notStarted
     private var isRefreshing = false
     private let onRequestFinished: ([Breed]) -> ()
