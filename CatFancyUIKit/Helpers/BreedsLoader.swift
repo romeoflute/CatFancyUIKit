@@ -14,7 +14,7 @@ enum BreedsLoader {
             fatalError(URL.couldNotInit(urlString: urlString))
         }
         
-        let (data, _) = try await URLSession.shared.data(from: url)
+        let (data, _) = try await Current.settings.sessionType.session.data(from: url)
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase
         let breeds = try decoder.decode(Breeds.self, from: data)
