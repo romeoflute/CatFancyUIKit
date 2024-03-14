@@ -20,6 +20,7 @@
 		BCBC23A12BA2C1B5001F671A /* Breeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBC23A02BA2C1B5001F671A /* Breeds.swift */; };
 		BCBC23A32BA2C233001F671A /* BreedsLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBC23A22BA2C233001F671A /* BreedsLoader.swift */; };
 		BCBC23AA2BA2C73C001F671A /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBC23A92BA2C73C001F671A /* Layout.swift */; };
+		BCBC23AC2BA2C7E5001F671A /* NSCoderExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBC23AB2BA2C7E5001F671A /* NSCoderExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		BCBC23A02BA2C1B5001F671A /* Breeds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breeds.swift; sourceTree = "<group>"; };
 		BCBC23A22BA2C233001F671A /* BreedsLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsLoader.swift; sourceTree = "<group>"; };
 		BCBC23A92BA2C73C001F671A /* Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layout.swift; sourceTree = "<group>"; };
+		BCBC23AB2BA2C7E5001F671A /* NSCoderExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSCoderExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 				BCBC239E2BA2C0EA001F671A /* URLExtension.swift */,
 				BCBC23A22BA2C233001F671A /* BreedsLoader.swift */,
 				BCBC23A92BA2C73C001F671A /* Layout.swift */,
+				BCBC23AB2BA2C7E5001F671A /* NSCoderExtension.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 				BCBC23692BA2BB1A001F671A /* AppDelegate.swift in Sources */,
 				BCBC23AA2BA2C73C001F671A /* Layout.swift in Sources */,
 				BCBC236B2BA2BB1A001F671A /* SceneDelegate.swift in Sources */,
+				BCBC23AC2BA2C7E5001F671A /* NSCoderExtension.swift in Sources */,
 				BCBC239F2BA2C0EA001F671A /* URLExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
