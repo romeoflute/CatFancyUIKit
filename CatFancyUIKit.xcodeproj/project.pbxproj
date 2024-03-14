@@ -83,6 +83,7 @@
 		BCBC24382BA30AD8001F671A /* TestingAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBC24372BA30AD8001F671A /* TestingAppDelegate.swift */; };
 		BCBC243A2BA30AFF001F671A /* TestingSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBC24392BA30AFF001F671A /* TestingSceneDelegate.swift */; };
 		BCBC243C2BA30B1B001F671A /* TestingRootVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBC243B2BA30B1B001F671A /* TestingRootVC.swift */; };
+		BCBC243E2BA31199001F671A /* BreedDetailVCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBC243D2BA31199001F671A /* BreedDetailVCTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -176,6 +177,7 @@
 		BCBC24372BA30AD8001F671A /* TestingAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingAppDelegate.swift; sourceTree = "<group>"; };
 		BCBC24392BA30AFF001F671A /* TestingSceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingSceneDelegate.swift; sourceTree = "<group>"; };
 		BCBC243B2BA30B1B001F671A /* TestingRootVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingRootVC.swift; sourceTree = "<group>"; };
+		BCBC243D2BA31199001F671A /* BreedDetailVCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedDetailVCTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -423,6 +425,7 @@
 		BCBC24322BA308A3001F671A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				BCBC243D2BA31199001F671A /* BreedDetailVCTests.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -613,6 +616,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCBC243E2BA31199001F671A /* BreedDetailVCTests.swift in Sources */,
 				BCBC243A2BA30AFF001F671A /* TestingSceneDelegate.swift in Sources */,
 				BCBC243C2BA30B1B001F671A /* TestingRootVC.swift in Sources */,
 				BCBC24382BA30AD8001F671A /* TestingAppDelegate.swift in Sources */,
