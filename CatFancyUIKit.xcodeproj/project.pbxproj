@@ -20,6 +20,7 @@
 		BC994AFA2BA408E900B4C411 /* URLProtocolStubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC994AF92BA408E900B4C411 /* URLProtocolStubTests.swift */; };
 		BC994AFC2BA4195500B4C411 /* URLSessionExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC994AFB2BA4195500B4C411 /* URLSessionExtensionTests.swift */; };
 		BC994AFE2BA419C100B4C411 /* UsesAutoLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC994AFD2BA419C100B4C411 /* UsesAutoLayoutTests.swift */; };
+		BC994B002BA41A6200B4C411 /* BreedsURLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC994AFF2BA41A6200B4C411 /* BreedsURLTests.swift */; };
 		BCBC23692BA2BB1A001F671A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBC23682BA2BB1A001F671A /* AppDelegate.swift */; };
 		BCBC236B2BA2BB1A001F671A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBC236A2BA2BB1A001F671A /* SceneDelegate.swift */; };
 		BCBC23722BA2BB1B001F671A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCBC23712BA2BB1B001F671A /* Assets.xcassets */; };
@@ -125,6 +126,7 @@
 		BC994AF92BA408E900B4C411 /* URLProtocolStubTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLProtocolStubTests.swift; sourceTree = "<group>"; };
 		BC994AFB2BA4195500B4C411 /* URLSessionExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionExtensionTests.swift; sourceTree = "<group>"; };
 		BC994AFD2BA419C100B4C411 /* UsesAutoLayoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsesAutoLayoutTests.swift; sourceTree = "<group>"; };
+		BC994AFF2BA41A6200B4C411 /* BreedsURLTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsURLTests.swift; sourceTree = "<group>"; };
 		BCBC23652BA2BB1A001F671A /* CatFancyUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatFancyUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCBC23682BA2BB1A001F671A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCBC236A2BA2BB1A001F671A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -431,6 +433,7 @@
 		BCBC242F2BA3089C001F671A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				BC994AFF2BA41A6200B4C411 /* BreedsURLTests.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -663,6 +666,7 @@
 			files = (
 				BC994AEA2BA3C8B000B4C411 /* GetterSetterFakeTests.swift in Sources */,
 				BC994AE82BA3C71300B4C411 /* BreedsLoaderTests.swift in Sources */,
+				BC994B002BA41A6200B4C411 /* BreedsURLTests.swift in Sources */,
 				BC994AFA2BA408E900B4C411 /* URLProtocolStubTests.swift in Sources */,
 				BC994AE62BA3C68B00B4C411 /* AppDelegateTests.swift in Sources */,
 				BC994AFC2BA4195500B4C411 /* URLSessionExtensionTests.swift in Sources */,
