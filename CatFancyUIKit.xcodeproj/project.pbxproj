@@ -13,6 +13,7 @@
 		BC994AEA2BA3C8B000B4C411 /* GetterSetterFakeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC994AE92BA3C8B000B4C411 /* GetterSetterFakeTests.swift */; };
 		BC994AEE2BA3C97B00B4C411 /* GetterSetterRealTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC994AED2BA3C97B00B4C411 /* GetterSetterRealTests.swift */; };
 		BC994AF02BA3C9FB00B4C411 /* ImageCacheLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC994AEF2BA3C9FB00B4C411 /* ImageCacheLoaderTests.swift */; };
+		BC994AF22BA3CCD800B4C411 /* NSLayoutConstraintExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC994AF12BA3CCD800B4C411 /* NSLayoutConstraintExtensionTests.swift */; };
 		BCBC23692BA2BB1A001F671A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBC23682BA2BB1A001F671A /* AppDelegate.swift */; };
 		BCBC236B2BA2BB1A001F671A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBC236A2BA2BB1A001F671A /* SceneDelegate.swift */; };
 		BCBC23722BA2BB1B001F671A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCBC23712BA2BB1B001F671A /* Assets.xcassets */; };
@@ -111,6 +112,7 @@
 		BC994AE92BA3C8B000B4C411 /* GetterSetterFakeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetterSetterFakeTests.swift; sourceTree = "<group>"; };
 		BC994AED2BA3C97B00B4C411 /* GetterSetterRealTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetterSetterRealTests.swift; sourceTree = "<group>"; };
 		BC994AEF2BA3C9FB00B4C411 /* ImageCacheLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheLoaderTests.swift; sourceTree = "<group>"; };
+		BC994AF12BA3CCD800B4C411 /* NSLayoutConstraintExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSLayoutConstraintExtensionTests.swift; sourceTree = "<group>"; };
 		BCBC23652BA2BB1A001F671A /* CatFancyUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatFancyUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCBC23682BA2BB1A001F671A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCBC236A2BA2BB1A001F671A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -428,6 +430,7 @@
 				BC994AE92BA3C8B000B4C411 /* GetterSetterFakeTests.swift */,
 				BC994AED2BA3C97B00B4C411 /* GetterSetterRealTests.swift */,
 				BC994AEF2BA3C9FB00B4C411 /* ImageCacheLoaderTests.swift */,
+				BC994AF12BA3CCD800B4C411 /* NSLayoutConstraintExtensionTests.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -647,6 +650,7 @@
 				BCBC24402BA315AB001F671A /* BrowseBreedsVCTests.swift in Sources */,
 				BCBC243E2BA31199001F671A /* BreedDetailVCTests.swift in Sources */,
 				BC994AE42BA3C52000B4C411 /* SettingsVCTests.swift in Sources */,
+				BC994AF22BA3CCD800B4C411 /* NSLayoutConstraintExtensionTests.swift in Sources */,
 				BC994AEE2BA3C97B00B4C411 /* GetterSetterRealTests.swift in Sources */,
 				BCBC243A2BA30AFF001F671A /* TestingSceneDelegate.swift in Sources */,
 				BCBC24422BA31A15001F671A /* MainTabBarVCTests.swift in Sources */,
