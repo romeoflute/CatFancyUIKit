@@ -31,4 +31,8 @@ class ImageCacheLoader {
             }
         }
     }
+    
+    static func clearCache() {
+        shared.cache.removeAllObjects()
+    }
 }
