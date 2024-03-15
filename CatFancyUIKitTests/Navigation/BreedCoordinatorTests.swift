@@ -1,0 +1,44 @@
+//
+//  BreedCoordinatorTests.swift
+//  CatFancyUIKitTests
+//
+//  Created by Romeo Flauta on 3/15/24.
+//
+
+@testable import CatFancyUIKit
+import XCTest
+
+class BreedCoordinatorTests: XCTestCase {
+    private let breed = Breed(name: "", knownFor: "", popularity: 42, photoUrl: MockData.photoURL, infoUrl: MockData.photoURL, credit: "", license: .publicDomain, description: "")
+    
+    func testStart() {
+        let nc = UINavigationController()
+        let coordinator = BreedCoordinator(navigationController: nc)
+        XCTAssertNil(coordinator.navigationController.topViewController)
+        coordinator.start()
+        XCTAssert(coordinator.navigationController.topViewController is BrowseBreedsVC)
+    }
+    
+    func testShowDetails() {
+        let nc = UINavigationController()
+        let coordinator = BreedCoordinator(navigationController: nc)
+        XCTAssertNil(coordinator.navigationController.topViewController)
+        coordinator.start()
+        XCTAssert(coordinator.navigationController.topViewController is BrowseBreedsVC)
+        coordinator.showDetails(breed: breed, animated: false)
+        XCTAssert(coordinator.navigationController.topViewController is BreedDetailVC)
+    }
+    
+    func testShowWebpage() {
+        let nc = UINavigationController()
+        let coordinator = BreedCoordinator(navigationController: nc)
+        XCTAssertNil(coordinator.navigationController.topViewController)
+        coordinator.start()
+        XCTAssert(coordinator.navigationController.topViewController is BrowseBreedsVC)
+        coordinator.showDetails(breed: breed, animated: false)
+        XCTAssert(coordinator.navigationController.topViewController is BreedDetailVC)
+        coordinator.showWebpage(url: breed.infoUrl, didSucceed: { didSucceed in
+            XCTAssert(didSucceed)
+        })
+    }
+}
