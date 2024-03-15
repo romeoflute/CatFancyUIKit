@@ -11,7 +11,7 @@ class BrowseBreedsView: UIView {
     static let rowHeight: CGFloat = 128.0
     
     @UsesAutoLayout
-    var activityIndicatorView: UIActivityIndicatorView = {
+    private(set) var activityIndicatorView: UIActivityIndicatorView = {
         let activityIndicatorView = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.large)
         return activityIndicatorView
     }()
@@ -26,7 +26,7 @@ class BrowseBreedsView: UIView {
     let refreshControl = UIRefreshControl()
     
     @UsesAutoLayout
-    var statusLabel: UILabel = {
+    private(set) var statusLabel: UILabel = {
         let statusLabel = UILabel()
         statusLabel.text = "Status"
         statusLabel.font = Fonts.heading
@@ -34,7 +34,7 @@ class BrowseBreedsView: UIView {
     }()
     
     @UsesAutoLayout
-    var statusDescription: UILabel = {
+    private(set) var statusDescription: UILabel = {
         let statusDescription = UILabel()
         statusDescription.numberOfLines = 0
         statusDescription.lineBreakMode = .byWordWrapping
