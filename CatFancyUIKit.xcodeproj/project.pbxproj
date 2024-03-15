@@ -18,6 +18,7 @@
 		BC994AF62BA406DF00B4C411 /* SoundPlayerRealTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC994AF52BA406DF00B4C411 /* SoundPlayerRealTests.swift */; };
 		BC994AF82BA407E700B4C411 /* UIViewControllerExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC994AF72BA407E700B4C411 /* UIViewControllerExtensionTests.swift */; };
 		BC994AFA2BA408E900B4C411 /* URLProtocolStubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC994AF92BA408E900B4C411 /* URLProtocolStubTests.swift */; };
+		BC994AFC2BA4195500B4C411 /* URLSessionExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC994AFB2BA4195500B4C411 /* URLSessionExtensionTests.swift */; };
 		BCBC23692BA2BB1A001F671A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBC23682BA2BB1A001F671A /* AppDelegate.swift */; };
 		BCBC236B2BA2BB1A001F671A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBC236A2BA2BB1A001F671A /* SceneDelegate.swift */; };
 		BCBC23722BA2BB1B001F671A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCBC23712BA2BB1B001F671A /* Assets.xcassets */; };
@@ -121,6 +122,7 @@
 		BC994AF52BA406DF00B4C411 /* SoundPlayerRealTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayerRealTests.swift; sourceTree = "<group>"; };
 		BC994AF72BA407E700B4C411 /* UIViewControllerExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensionTests.swift; sourceTree = "<group>"; };
 		BC994AF92BA408E900B4C411 /* URLProtocolStubTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLProtocolStubTests.swift; sourceTree = "<group>"; };
+		BC994AFB2BA4195500B4C411 /* URLSessionExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionExtensionTests.swift; sourceTree = "<group>"; };
 		BCBC23652BA2BB1A001F671A /* CatFancyUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatFancyUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCBC23682BA2BB1A001F671A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCBC236A2BA2BB1A001F671A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -443,6 +445,7 @@
 				BC994AF52BA406DF00B4C411 /* SoundPlayerRealTests.swift */,
 				BC994AF72BA407E700B4C411 /* UIViewControllerExtensionTests.swift */,
 				BC994AF92BA408E900B4C411 /* URLProtocolStubTests.swift */,
+				BC994AFB2BA4195500B4C411 /* URLSessionExtensionTests.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -659,6 +662,7 @@
 				BC994AE82BA3C71300B4C411 /* BreedsLoaderTests.swift in Sources */,
 				BC994AFA2BA408E900B4C411 /* URLProtocolStubTests.swift in Sources */,
 				BC994AE62BA3C68B00B4C411 /* AppDelegateTests.swift in Sources */,
+				BC994AFC2BA4195500B4C411 /* URLSessionExtensionTests.swift in Sources */,
 				BC994AF62BA406DF00B4C411 /* SoundPlayerRealTests.swift in Sources */,
 				BC994AF02BA3C9FB00B4C411 /* ImageCacheLoaderTests.swift in Sources */,
 				BCBC24402BA315AB001F671A /* BrowseBreedsVCTests.swift in Sources */,
